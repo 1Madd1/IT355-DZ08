@@ -1,9 +1,14 @@
 package com.metropolitan.it355dz08.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "publisher")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Publisher {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

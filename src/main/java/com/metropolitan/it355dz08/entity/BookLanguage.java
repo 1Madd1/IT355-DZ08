@@ -1,9 +1,14 @@
 package com.metropolitan.it355dz08.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "book_language")
+@NoArgsConstructor
+@AllArgsConstructor
 public class BookLanguage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
